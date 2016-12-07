@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_black"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50px"
+            android:text="@string/app_name"
+            android:textColor="@color/text_foreground_color_white"
+            android:textSize="25sp" />
+
+        <include
+            android:id="@+id/ExecuteListButton"
+            layout="@layout/image_button_small"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px" />
+
+        <include
+            android:id="@+id/ExecuteQRButton"
+            layout="@layout/image_button_small"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/ExecuteARButton"
+            layout="@layout/image_button_small"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px" />
+
+    </LinearLayout>
+
+</RelativeLayout>

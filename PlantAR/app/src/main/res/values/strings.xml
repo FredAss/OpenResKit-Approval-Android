@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafetyPlant</string>
+    <string name="settings_string">Settings</string>
+    <string name="url_string">URL</string>
+    <string name="url_description_string">Insert the URL of the Server</string>
+    <string name="port_string">Port</string>
+    <string name="port_description_string">Insert the port of the Service</string>
+    <string name="user_string">User</string>
+    <string name="user_description_string">Insert the user</string>
+    <string name="password_string">Password</string>
+    <string name="password_description_string">Insert password of user</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="ok_string">Ok</string>
+    <string name="load_data_string">Load Data</string>
+    <string name="delete_data_string">Delete local data</string>
+    <string name="loading_data_string">Load data from Server...</string>
+    <string name="error_occuring_string">An error is occured </string>
+    <string name="error_missing_files">Needed files are missing</string>
+    <string name="pw_user_error_string">The user or the password is incorrect for authentification for the OData Service</string>
+    <string name="deleted_data_string">Data were deleted</string>
+    <string name="search_list_string">Search within list</string>
+    <string name="search_qr_string">Search with QR-Code</string>
+    <string name="search_ar_string">Search with Camera</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="position">Position</string>
+    <string name="description">Description:\t</string>
+    <string name="repeat">Repeat</string>
+    <string name="show_data">Show data</string>
+    <string name="documents">Documents</string>
+    <string name="help">Help</string>
+    <string name="help_list">The "Search within list" enables you to select a plant from a filterable list. The data of the selected plant are then shown.</string>
+    <string name="help_qr">The "Search with QR-Code" enables you to get data from the recognized qr-code. For that just place the device to the qr-code. After a short while the device recognize the qr-code and shows then the data of the recognized plant.</string>
+    <string name="help_ar">The "Search with AR" enables you to receive the data of plant through recognizing the plant number. To require the data just place the device the plant number. After a short while the device recognize the plant and shows then the data.</string>
+    <string name="plant_details">Details</string>
+    <string name="plant_substances">Substances</string>
+    <string name="type_select">Select type...</string>
+    <string name="type_input">Input</string>
+    <string name="type_output">Output</string>
+    <string name="category_select">Select category...</string>
+    <string name="category_gaseous">Gaseous</string>
+    <string name="category_liquid">Liquid</string>
+    <string name="category_solid">Solid</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="substance_info">Substances, from them are</string>
+    <string name="attached_documents">Attached Documents:</string>
+    <string name="measures">Measures:</string>
+    <string name="hint_filter_plants">Filter plants...</string>
+    <string-array name="category">
+        <item>@string/category_select</item>
+        <item>@string/category_gaseous</item>
+        <item>@string/category_liquid</item>
+        <item>@string/category_solid</item>
+    </string-array>
+    <string-array name="type">
+        <item>@string/type_select</item>
+        <item>@string/type_input</item>
+        <item>@string/type_output</item>
+    </string-array>
+    <string-array name="risk_potential">
+        <item>@string/low</item>
+        <item>@string/medium</item>
+        <item>@string/high</item>
+    </string-array>
+</resources>

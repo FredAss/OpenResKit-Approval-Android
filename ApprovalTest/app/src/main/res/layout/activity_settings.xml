@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.approvalmanagement.SettingsActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@color/background_color_black"
+    >
+
+    <TextView
+        android:id="@+id/settingstextview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/url_settings"
+        android:textColor="@color/text_foreground_color_white"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText
+        android:id="@+id/settingsedittextip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/settingstextview1"
+        android:layout_alignLeft="@+id/settingstextview1" />
+
+    <TextView
+        android:id="@+id/settingstextview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/serverport_settings"
+        android:textStyle="bold"
+        android:textColor="@color/text_foreground_color_white"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_below="@+id/settingsedittextip"
+        android:layout_alignLeft="@+id/settingsedittextip"
+        android:layout_marginTop="10dp"
+        />
+
+     <EditText
+        android:id="@+id/settingsedittextport"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/settingstextview2"
+        android:layout_alignLeft="@+id/settingstextview2" />
+     
+     <TextView
+        android:id="@+id/settingstextview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsedittextport"
+        android:layout_alignLeft="@+id/settingsedittextport"
+        android:text="@string/username_settings"
+        android:textStyle="bold"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+      <EditText
+        android:id="@+id/settingsedittextuser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/settingstextview3"
+        android:layout_alignLeft="@+id/settingstextview3" />
+      
+        <TextView
+        android:id="@+id/settingstextview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsedittextuser"
+        android:layout_alignLeft="@+id/settingsedittextuser"
+        android:text="@string/password_settings"
+        android:textStyle="bold"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+       <EditText
+        android:id="@+id/settingsedittextpw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_below="@+id/settingstextview4"
+        android:layout_alignLeft="@+id/settingstextview4"/>
+
+
+        <requestFocus />
+
+
+</RelativeLayout>

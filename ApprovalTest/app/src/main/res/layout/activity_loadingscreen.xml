@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/loading_bc">
+    
+    
+<ImageView 
+ android:id="@+id/loadingscreenimagelogo"   
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_above="@+id/loadingscreenimage"
+ android:src="@drawable/logo_inplus"   
+ android:layout_alignParentLeft="true"
+ android:layout_marginBottom="10dp"
+ android:layout_marginLeft="20dp"   />     
+    
+    
+    <ImageView 
+ android:id="@+id/loadingscreenimage"   
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:layout_centerInParent="true"
+ android:src="@drawable/logo_inplus_neu"   
+ android:scaleType="fitXY"   />    
+    
+</RelativeLayout>

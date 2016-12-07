@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.approvaltest.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:orientation="horizontal"
+    android:background="@color/background_color_black" >
+
+    <LinearLayout
+        android:id="@+id/linear_inspecs"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prüfungen"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/> 
+   
+    <ListView 
+        android:id="@+id/list_inspection"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_foreground_color_white"
+        android:background="@drawable/selected_key"
+        android:layout_marginLeft="20dp"/>   
+      
+    </LinearLayout>
+    
+    <View         
+        android:id="@+id/cutter"
+        android:layout_toRightOf="@+id/linear_inspecs"
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"/>
+    
+    <LinearLayout
+     android:id="@+id/linear_auxes"   
+     android:layout_toRightOf="@+id/cutter"         
+     android:orientation="vertical"
+     android:layout_width="wrap_content"
+     android:layout_height="fill_parent">
+        
+        <TextView 
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nebenbestimmungen"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        />      
+        
+        <ListView 
+        android:id="@+id/list_auxillary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_foreground_color_white"
+        android:visibility="invisible"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"/>   
+        
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_inspects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="bottom"
+        android:text="@string/start_inspects"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:onClick="starttheinspecs" />
+    
+    <TextView 
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Betroffene Anlage(n)"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceMedium"    
+        />
+    
+    	 <TextView 
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:layout_below="@+id/textView3"
+        android:textAppearance="?android:attr/textAppearanceMedium"    
+        />    
+           
+    <ImageView
+        android:id="@+id/image_view1"
+        android:layout_width="500px"
+        android:layout_height="200px"
+        android:layout_below="@+id/textView6"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/textView3"/>
+      
+    
+    <TextView 
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Betr. Genehmigung(en)"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:layout_below="@+id/image_view1"
+        android:textAppearance="?android:attr/textAppearanceMedium"    
+        />
+         
+          <TextView 
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:layout_below="@+id/textView4"
+        android:textAppearance="?android:attr/textAppearanceMedium"    
+        />           
+          
+</RelativeLayout>
+	
+	

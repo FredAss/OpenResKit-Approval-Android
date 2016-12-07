@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/background_color_black">
+    
+    <TextView 
+        android:id="@+id/tvaip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/text_foreground_color_white"        
+        />
+    
+    
+    <View        
+        android:id="@+id/cutter"
+        android:layout_below="@+id/tvaip1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"/>
+    
+     <TextView 
+        android:id="@+id/tvaip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:text="Nebenbestimmungen"
+        android:textColor="@color/text_foreground_color_white"        
+        />
+   
+ <TextView 
+  		android:id="@+id/tvaipusedplants"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cutter"
+        android:text="Betroffene Anlagen:"
+        android:textColor="@color/text_foreground_color_white"     
+     />
+  
+  <TextView 
+  		android:id="@+id/tvaipusedplantstext"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvaipusedplants"
+        android:textColor="@color/text_foreground_color_white"     
+     />
+ 
+  <TextView 
+  		android:id="@+id/tvaipusedpermissions"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvaipusedplantstext"
+        android:text="Betroffene Genehmigung(en):"
+        android:textColor="@color/text_foreground_color_white"     
+     />
+ 
+  <TextView 
+  		android:id="@+id/tvaipusedpermissionstext"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvaipusedpermissions"
+        android:textColor="@color/text_foreground_color_white"     
+     />
+     
+  <LinearLayout 
+  android:id="@+id/linear_auxes1"  
+  android:layout_marginTop="5dp"
+  android:layout_marginLeft="20dp" 
+  android:layout_alignParentRight="true"        
+  android:layout_below="@+id/cutter"
+  android:layout_toRightOf="@+id/tvaipusedpermissions"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="fill_parent">    
+      
+      
+      <ListView 
+        android:id="@+id/list_auxillary1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_foreground_color_white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"/>    
+   
+ </LinearLayout>   
+
+  <LinearLayout      
+     android:id="@+id/linear_auxes2"  
+     android:layout_marginTop="5dp"
+     android:layout_marginLeft="20dp" 
+     android:layout_alignParentRight="true"        
+     android:layout_below="@+id/cutter"
+     android:layout_toRightOf="@+id/tvaipusedpermissions"
+     android:orientation="vertical"
+     android:layout_width="wrap_content"
+     android:layout_height="fill_parent">
+     
+        
+        <ListView 
+        android:id="@+id/list_auxillary2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_foreground_color_white"
+        />      
+    
+</LinearLayout>    
+
+<Button
+    android:id="@+id/btn_quit_inspection"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:onClick="Endtheinspecs"
+    android:text="@string/end_inspects"
+    android:textColor="@color/text_foreground_color_white"
+    android:textSize="25sp" />
+  
+</RelativeLayout>

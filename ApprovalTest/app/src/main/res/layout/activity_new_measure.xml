@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color_black"
+     >
+    
+    <TextView 
+    android:id="@+id/nmtv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:textSize="30sp"
+    android:textColor="@color/text_foreground_color_white"
+    android:layout_marginLeft="20dp"
+    android:layout_alignParentLeft="true"         
+        />
+
+    <View 
+     android:id="@+id/cutter2"
+     android:layout_below="@+id/nmtv1"
+     android:layout_width="fill_parent"
+     android:layout_height="2dp"
+     android:layout_marginTop="5dp"
+     android:background="@android:color/white"   
+    />
+    
+    <TextView 
+    android:id="@+id/nmtv2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:textSize="30sp"
+    android:text="Verantwortlichkeit und Ablauf"
+    android:textColor="@color/text_foreground_color_white"
+    android:layout_alignParentRight="true"   
+    android:layout_marginRight="20dp"      
+        />
+    
+    
+      <LinearLayout 
+    android:id="@+id/linear_measure0"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="20dp"
+    android:weightSum="2"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/cutter2">
+    
+    
+     <LinearLayout 
+    android:id="@+id/linear_measure"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="20dp"
+    android:weightSum="1"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/cutter2">
+         
+    <TextView 
+    android:id="@+id/meausure_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/text_foreground_color_white"
+    android:layout_marginTop="10dp"/>
+    
+    <TextView 
+    android:id="@+id/currentdate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/text_foreground_color_white"
+    android:layout_marginTop="10dp"/> 
+    
+    <TextView 
+    android:id="@+id/textfield"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/text_foreground_color_white"
+    android:text="Beschreibung:"
+    android:layout_marginTop="10dp"/> 
+    
+    <EditText 
+    android:id="@+id/edittext_write"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/text_foreground_color_white"
+    android:layout_marginTop="5dp"/>  
+            
+     </LinearLayout>
+  
+
+     
+     <LinearLayout 
+    android:id="@+id/linear_measure2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="fill_parent"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_below="@+id/cutter2">
+            
+        />    
+    
+    <Spinner
+    android:id="@+id/spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"     
+    />
+        
+    
+    <EditText 
+     android:id="@+id/datetimepicker"
+     android:hint="Erledigung bis zum:"
+     android:onClick="showDatePickerDialog"
+     android:textSize="20sp"
+     android:focusable="false"
+     android:layout_marginTop="10dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="@color/text_foreground_color_white"  />    
+         
+   
+         
+     </LinearLayout>
+          </LinearLayout>
+     
+<Button 
+    android:id="@+id/button:new_measure"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/new_measure_yes"
+    android:textSize="30sp"
+    android:onClick="acceptmeasure"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:textColor="@color/text_foreground_color_white"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    />    
+    
+
+</RelativeLayout>

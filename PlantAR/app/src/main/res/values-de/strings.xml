@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafetyPlant</string>
+    <string name="settings_string">Einstellungen</string>
+    <string name="url_string">URL</string>
+    <string name="url_description_string">Eintragen der URL des Servers</string>
+    <string name="port_string">Port</string>
+    <string name="port_description_string">Eintragen des Ports vom Dienst</string>
+    <string name="user_string">Benutzer</string>
+    <string name="user_description_string">Eintragen des Benutzers</string>
+    <string name="password_string">Passwort</string>
+    <string name="password_description_string">Eintragen des Passwortes vom Benutzer</string>
+    <string name="cancel_string">Abbrechen</string>
+    <string name="ok_string">Ok</string>
+    <string name="load_data_string">Daten laden</string>
+    <string name="delete_data_string">Lösche lokale Daten</string>
+    <string name="loading_data_string">Lade Daten vom Server...</string>
+    <string name="error_occuring_string">Ein Fehler ist aufgetreten </string>
+    <string name="error_missing_files">Benötigten Daten sind nicht vorhanden</string>
+    <string name="pw_user_error_string">Der Benutzername oder das Passwort für die Authentifizierung am OData Service sind nicht korrekt</string>
+    <string name="deleted_data_string">Daten wurden gelöscht</string>
+    <string name="search_list_string">Suche in Liste</string>
+    <string name="search_qr_string">Suche mit QR-Code</string>
+    <string name="search_ar_string">Suche mit Kamera</string>
+    <string name="name">Name</string>
+    <string name="number">Nummer</string>
+    <string name="position">Standort</string>
+    <string name="description">Beschreibung:\t</string>
+    <string name="repeat">Wiederholen</string>
+    <string name="show_data">Zeige Daten</string>
+    <string name="documents">Dokumente</string>
+    <string name="help">Hilfe</string>
+    <string name="help_list">Die "Suche aus der Liste" ermöglicht es Anlagen aus einer filterbaren Liste zu selektiren.Die Daten der selektierten Anlage werden anschließend dargestellt.</string>
+    <string name="help_qr">Die "Suche mit QR-Code" ermöglicht es Daten einer Anlage mit Hilfe eines QR-Codes zu erhalten. Hierfür muss das Gerät zum QR-Code ausgerichted werden. Kurze Zeit später erkennt das Gerät den QR-Code und zeigt die dazugehörigen Daten an.</string>
+    <string name="help_ar">Die "Suche nach AR" ermöglicht es anhand der Anlagenbezeichnung die dazugehörigen Daten anzuzeigen. Hierfür muss das Gerät zu der Anlagenbezeichnung ausgerichted werden. Kurze Zeit später erkennt das Gerät die Anlage und zeigt dessen Daten an.</string>
+    <string name="plant_details">Details</string>
+    <string name="plant_substances">Substanzen</string>
+    <string name="type_select">Wähle Typ...</string>
+    <string name="type_input">Input</string>
+    <string name="type_output">Output</string>
+    <string name="category_select">Wähle Kategorie...</string>
+    <string name="category_gaseous">Gasförmig</string>
+    <string name="category_liquid">Flüssig</string>
+    <string name="category_solid">Fest</string>
+    <string name="high">Hoch</string>
+    <string name="medium">Mittel</string>
+    <string name="low">Niedrig</string>
+    <string name="substance_info">Substanzen, davon sind</string>
+    <string name="attached_documents">Angehangene Dokumente:</string>
+    <string name="measures">Handlungsmaßnahmen:</string>
+    <string name="hint_filter_plants">Anlagen filtern...</string>
+    <string-array name="category">
+        <item>@string/category_select</item>
+        <item>@string/category_gaseous</item>
+        <item>@string/category_liquid</item>
+        <item>@string/category_solid</item>
+    </string-array>
+    <string-array name="type">
+        <item>@string/type_select</item>
+        <item>@string/type_input</item>
+        <item>@string/type_output</item>
+    </string-array>
+    <string-array name="risk_potential">
+        <item>@string/low</item>
+        <item>@string/medium</item>
+        <item>@string/high</item>
+    </string-array>
+</resources>

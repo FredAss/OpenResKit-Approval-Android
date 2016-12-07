@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_black"
+    tools:context=".SearchActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/search_options"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50sp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_foreground_color_white"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/search_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/ExecuteListButton"
+            layout="@layout/image_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="7.5sp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/ExecuteQRButton"
+            layout="@layout/image_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="7.5sp"
+            android:layout_marginRight="7.5sp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/ExecuteARButton"
+            layout="@layout/image_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="7.5sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

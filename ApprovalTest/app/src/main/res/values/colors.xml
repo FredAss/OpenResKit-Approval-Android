@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="list_pressed">#77336699</drawable>
+    <drawable name="list_selected">#ffffffff</drawable>
+    <drawable name="list_selected_dark">#bbbbbb</drawable>
+    <drawable name="list_item_selection">#CA5100</drawable>
+    <drawable name="list_item_pressed">#FF1E1E1E</drawable>
+    <drawable name="button_pressed_color">#747474</drawable>
+    <drawable name="list_item_default">#343434</drawable>
+    <color name="background_list_color_light_black">#343434</color>
+    <color name="background_list_am_color_light_black">#33343434</color>
+    <color name="text_foreground_color_white">#F1F1F1</color>
+    <color name="image_button_color">#6E6E6E</color>
+    <color name="image_button_am_color">#336E6E6E</color>
+    <color name="shadow_line_color">#CA5100</color>
+    <color name="background_color_black">#1A1A1A</color>
+    <color name="loading_bc">#FFFFFF</color>
+    
+</resources>
